@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Recherche Airbnb</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <h1>Recherche Airbnb</h1>
+    <form id="searchForm">
+      <label>Lieu :</label>
+      <input type="text" name="location" required /><br/><br/>
+      <label>Date d'arrivée (YYYY-MM-DD):</label>
+      <input type="text" name="checkin" /><br/><br/>
+      <label>Date de départ (YYYY-MM-DD):</label>
+      <input type="text" name="checkout" /><br/><br/>
+      <label>Nombre d'adultes :</label>
+      <input type="number" name="adults" value="1" /><br/><br/>
+      <label>Nombre d'enfants :</label>
+      <input type="number" name="children" value="0" /><br/><br/>
+      <label>Nombre d'infants :</label>
+      <input type="number" name="infants" value="0" /><br/><br/>
+      <label>Nombre d'animaux :</label>
+      <input type="number" name="pets" value="0" /><br/><br/>
+      <label>Prix minimum :</label>
+      <input type="number" name="minPrice" /><br/><br/>
+      <label>Prix maximum :</label>
+      <input type="number" name="maxPrice" /><br/><br/>
+      <button type="submit">Lancer la recherche</button>
+    </form>
+    <div id="results"></div>
+    <script src="main.js"></script>
+  </body>
+</html>
